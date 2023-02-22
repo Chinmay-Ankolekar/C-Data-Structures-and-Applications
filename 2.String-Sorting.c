@@ -1,7 +1,3 @@
-/*Design, Develop and Implement a Program for Strings
-a. Insertion sort
-b. Selection sort*/
-
 #include<stdio.h>
 #include<string.h>
 void selection_sort(char s[]){
@@ -43,7 +39,3 @@ int main(){
     insertion_sort(s);
     selection_sort(s);
 }
-  /*OUTPUT
-    Enter the char array :chinmayankolekar
-    The Sorted Array is(Insertion sort) : aaacehikklmnnory
-    The Sorted Array is(Selection Sort) : aaacehikklmnnory*/
