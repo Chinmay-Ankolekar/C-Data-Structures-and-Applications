@@ -1,11 +1,3 @@
-/*Design, Develop and Implement a menu driven Program for the following 
-operations on Binary Search Tree (BST) of Integers . 
-a. Create a BST of N Integers: 6, 9, 5, 2, 8, 15, 24, 14, 7, 8, 5, 2. 
-b. Traverse the BST in Inorder, Preorder and Post Order. 
-c. Search the BST for a given element (KEY) and report the appropriate 
-message.
-d. Exit.*/
-
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -99,61 +91,3 @@ int main(){
        }
    }
 }
-/*   
-Enter the No. of values:12
-
-Binary Search Tree
-1.Create
-2.Traversal
-3.Search
-4.Exit
-Enter your choice:1
-Enter node :6
-Enter node :9
-Enter node :5
-Enter node :2
-Enter node :8
-Enter node :15
-Enter node :24
-Enter node :14
-Enter node :7
-Enter node :8
-Enter node :5
-Enter node :2
-
-Binary Search Tree
-1.Create
-2.Traversal
-3.Search
-4.Exit
-Enter your choice:2
-
-Inorder: 2      2       5       5       6       7       8       8       9       14      15      24
-Preorder :6     5       2       2       5       9       8       7       8       15      14      24
-Postorder :2    2       5       5       7       8       8       14      24      15      9       6
-
-Binary Search Tree
-1.Create
-2.Traversal
-3.Search
-4.Exit
-Enter your choice:3
-Enter the Element to search:16
-Element 16 not found
-
-Binary Search Tree
-1.Create
-2.Traversal
-3.Search
-4.Exit
-Enter your choice:3
-Enter the Element to search:14
-Element 14 found
-
-Binary Search Tree
-1.Create
-2.Traversal
-3.Search
-4.Exit
-Enter your choice:4
-*/
