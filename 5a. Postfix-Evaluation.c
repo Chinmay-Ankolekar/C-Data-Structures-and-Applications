@@ -1,9 +1,3 @@
-/*Design, Develop and Implement a Program for the following Stack 
-Applications 
-a. Evaluation of Suffix expression with single digit operands 
-and operators: +, -, *, /, %, ^ 
-b. Solving Tower of Hanoi problem with n disks.*/
-
 #include<stdio.h>
 #include<string.h>
 #include<math.h>
@@ -71,9 +65,3 @@ int main(){
       res=stack[top];
     printf("Evaluated Postfix Expression is :%f",res);
 }
-
-/* OUTPUT:-
-
-    Enter Postfix expression        : 6324+-*
-    Evaluated Postfix Expression is :-18.000000
-*/
