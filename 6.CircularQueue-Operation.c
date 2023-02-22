@@ -1,13 +1,3 @@
-/*Design, Develop and Implement a menu driven Program for the following 
-operations on Circular QUEUE of Characters (Array Implementation of 
-Queue with maximum size MAX) .
-a. Insert an Element onto Circular QUEUE.
-b. Delete an Element from Circular QUEUE.
-c. Demonstrate Overflow and Underflow situations on Circular QUEUE.
-d. Display the status of Circular QUEUE. 
-e. Exit Support the program with appropriate functions for each of the 
-above operations.*/
-
 #include<stdio.h>
 #include<stdlib.h>
 #define MAX 5
@@ -77,59 +67,3 @@ void main()
         }
     }
 }
-/*OUTPUT:-
-Circular Queue Operation
-1. Enqueue
-2. Dequeue
-3. Display
-4. Exit
-Enter your Choice: 1
-Enter the Character to insert in queue :a
-
-Circular Queue Operation
-1. Enqueue
-2. Dequeue
-3. Display
-4. Exit
-Enter your Choice: 1
-Enter the Character to insert in queue :b
-
-Circular Queue Operation
-1. Enqueue
-2. Dequeue
-3. Display
-4. Exit
-Enter your Choice: 1
-Enter the Character to insert in queue :c
-
-Circular Queue Operation
-1. Enqueue
-2. Dequeue
-3. Display
-4. Exit
-Enter your Choice: 3
-a       b       c
-
-Circular Queue Operation
-1. Enqueue
-2. Dequeue
-3. Display
-4. Exit
-Enter your Choice: 2
-Deleted Character is a
-
-Circular Queue Operation
-1. Enqueue
-2. Dequeue
-3. Display
-4. Exit
-Enter your Choice: 3
-b       c
-
-Circular Queue Operation
-1. Enqueue
-2. Dequeue
-3. Display
-4. Exit
-Enter your Choice: 4
-*/
