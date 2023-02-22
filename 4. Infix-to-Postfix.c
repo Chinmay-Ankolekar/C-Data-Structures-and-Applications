@@ -1,8 +1,3 @@
-/*Design, Develop and Implement a Program for converting an Infix 
-Expression to Postfix Expression. Program should support for both 
-parenthesized and free parenthesized expressions with the operators: +, -, 
-*, /, % (Remainder), ^ (Power) and alphanumeric operands.*/
-
 #include<stdio.h>
 #include<string.h>
 
@@ -85,9 +80,3 @@ int main(){
 
     return 0;
 }
-
-/* OUTPUT:-
-     Enter a valid infix expression:(a/(b-c)*d+e)
-     The Infix expression is       :(a/(b-c)*d+e)
-     The Postfix expression is     :abc-/d*e+
-*/
