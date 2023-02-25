@@ -31,7 +31,7 @@ void isPallindrome(){
       for(i=top;i>=0;i--)
         printf("|%d|\n",stack[i]);
 
-    printf("Reverse of stack contenet are:\n");
+    printf("Reverse of stack contents are:\n");
       for(i=0;i<=top;i++)
         printf("|%d|\n",stack[i]);
     for(i=0;i<=top/2;i++)
