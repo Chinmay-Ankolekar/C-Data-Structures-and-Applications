@@ -63,10 +63,12 @@ int insertend(){
     scanf("%d", &newnode->sem);
     printf("Enter Phone Number:");
     scanf("%d", &newnode->ph_no);
-    newnode->next = NULL;
-    temp = tail;
-    temp->next = newnode;
-    tail = newnode;
+    temp=head;
+    while(temp->next!=NULL){
+        temp=temp->next;
+    }
+    temp->next=newnode;
+    newnode->next=NULL;
 }
 int delend(){
     temp = head;
