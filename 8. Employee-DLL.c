@@ -103,7 +103,7 @@ void display(){
 void dequeue(){   
     int choice;
     while (1){
-        printf("\nDDL as Double Ended Queue\n");
+        printf("\nDLL as Double Ended Queue\n");
         printf("\n1.InsertQueueFront\n2.DeleteQueueFront\n3.InsertQueueRear\n4.DeleteQueueRear\n5.DisplayStatus\n6.Exit \n");
         scanf("%d", &choice);
     switch (choice)
