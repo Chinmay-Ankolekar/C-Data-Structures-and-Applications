@@ -5,7 +5,7 @@ struct node{
     struct node *prev, *next;
     char name[25],des[10],dept[10],ssn[10];
     int sal,ph_no;
-} *newnode, *head = NULL, *temp, *tail;
+} *newnode, *head = NULL, *temp, *tail,*cur;
 
 void create() {
     newnode = (struct node *)malloc(sizeof(struct node));
@@ -83,10 +83,13 @@ while(tail->next!=NULL){
     newnode->next=NULL;
 }
 void delend(){
-    temp = tail;
-    temp->prev->next = NULL;
-    tail = temp->prev;
-    free(temp);
+    temp = head;
+while (temp->next != NULL){
+        cur = temp;
+        temp = temp->next;
+}
+   cur->next=NULL;
+   free(temp);
 }
 void display(){
     temp = head;
