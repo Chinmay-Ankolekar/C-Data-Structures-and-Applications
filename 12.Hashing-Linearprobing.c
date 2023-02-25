@@ -44,10 +44,10 @@ void Display() {
 	int i;
 	int ch;
 	printf("Would you like to hide empty values? (1/0) : ");
-	scanf(" %c",&ch);
+	scanf("%d",&ch);
 	printf("HT Key \tEmp ID \tEmp Name\n");
 	for(i=0;i<N;i++){
-		if(ch == '1' && HT[i] == -1)
+		if(ch == 1 && HT[i] == -1)
 			continue;
 		else
 		 printf("%d \t %d \t%s \n",i, emp[i].id, emp[i].name);
@@ -62,7 +62,7 @@ void main(){
 		scanf("%d", &key);
 		LinearProbing(key);
 		printf("Do you wish to continue (1/0): ");
-		scanf(" %c",&ch);
-	} while(ch=='1');
+		scanf("%d",&ch);
+	} while(ch==1);
 	Display();
 }
