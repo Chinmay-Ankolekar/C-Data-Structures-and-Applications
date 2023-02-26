@@ -33,7 +33,7 @@ void delete(){
     printf("Enter the position to delete :");
     scanf("%d",&pos);
     printf("Deleted element is %d", a[pos-1]);
-    for(i=pos;i<=n;i++){
+    for(i=pos;i<=n-1;i++){
         a[i-1]=a[i];
     }
      n=n-1;
