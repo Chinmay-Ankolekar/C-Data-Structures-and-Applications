@@ -41,7 +41,7 @@ void delete(){
 int main(){
     int ch;
 
-while(ch)
+while(1)
 {
  printf("\n____ARRAY OPERATION____\n");
  printf("1.Create\n2.Display\n3.Insert\n4.Delete\n5.Exit\n");
