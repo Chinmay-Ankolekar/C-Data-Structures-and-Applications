@@ -21,6 +21,7 @@ NODE getnode()
     }
        return newnode;
 }
+
 NODE attach(int coef, int xexp, int yexp, int zexp, NODE head)
 {
     NODE temp, cur;
@@ -37,6 +38,7 @@ NODE attach(int coef, int xexp, int yexp, int zexp, NODE head)
       temp->link = head;
         return head;
 }
+
 NODE read_poly(NODE head)
 {
     int i, j, coef, xexp, yexp, zexp, n;
@@ -54,6 +56,7 @@ NODE read_poly(NODE head)
     }
         return head;
 }
+
 void display(NODE head)
 {
     NODE temp;
@@ -70,6 +73,7 @@ void display(NODE head)
             printf(" + ");
     }
 }
+
 int poly_evaluate(NODE head)
 {
     int x, y, z, sum = 0;
@@ -83,6 +87,7 @@ int poly_evaluate(NODE head)
     }
       return sum;
 }
+
 NODE poly_sum(NODE head1, NODE head2, NODE head3)
 {
     NODE a, b;
@@ -186,6 +191,7 @@ NODE poly_sum(NODE head1, NODE head2, NODE head3)
     }
     return head3;
 }
+
 void main()
 {
   NODE head, head1, head2, head3;
