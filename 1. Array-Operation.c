@@ -10,6 +10,7 @@ void create() {
         scanf("%d",&a[i]);
     }
 }
+
 void display() {
      printf("Elements in the Array are :");
     for(i=0;i<n;i++){
@@ -17,6 +18,7 @@ void display() {
          printf(" ");
    }
 }
+
 int elem ,pos;
 void insert(){
     printf("Enter the position for new element : ");
@@ -29,6 +31,7 @@ void insert(){
     a[pos-1]=elem;
     n=n+1;
 }
+
 void delete(){
     printf("Enter the position to delete :");
     scanf("%d",&pos);
@@ -38,6 +41,7 @@ void delete(){
     }
      n=n-1;
 }
+
 int main(){
     int ch;
 
