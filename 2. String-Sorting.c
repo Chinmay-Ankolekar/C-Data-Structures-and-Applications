@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+
 void selection_sort(char s[]){
     char temp;
     int l,i,j,min;
@@ -17,6 +18,7 @@ void selection_sort(char s[]){
 }
 printf("\nThe Sorted Array is(Selection Sort) : %s",s);
 }
+
 void insertion_sort(char s[]){
     int i,j,l;
     char temp;
@@ -32,6 +34,7 @@ void insertion_sort(char s[]){
     }
     printf("The Sorted Array is(Insertion sort) : %s",s);
 }
+
 int main(){
     char s[200];
     printf("Enter the Character array :");
