@@ -6,24 +6,28 @@ struct node{
     struct node* left;
     struct node* right;
 };
+
 void inorder(struct node* root){
     if(root==NULL) return;
     inorder(root->left);
     printf("%d\t",root->data);
     inorder(root->right);
 }
+
 void preorder(struct node* root){
     if(root==NULL) return;
     printf("%d\t",root->data);
     preorder(root->left);
     preorder(root->right);
 }
+
 void postorder(struct node* root){
     if(root==NULL) return;
     postorder(root->left);
     postorder(root->right);
     printf("%d\t",root->data);
 }
+
 struct node* create(int value){
     struct node* newnode=malloc(sizeof(struct node));
     newnode->data =value;
@@ -31,6 +35,7 @@ struct node* create(int value){
     newnode->right=NULL;
     return newnode;
 }
+
 struct node* insert(struct node* node,int value){
     if(node ==NULL) return create(value);
    if(value<node->data)
@@ -38,6 +43,7 @@ struct node* insert(struct node* node,int value){
    else node->right=insert(node->right,value);
     return node;
 }
+
 int flag=0;
 void search(struct node* root,int key){
     if(root->data==key){
@@ -54,6 +60,7 @@ void search(struct node* root,int key){
     return;
     }
 }
+
 int main(){
     int i,n,k,m,ch;
     printf("Enter the No. of values:");
