@@ -32,6 +32,7 @@ void create() {
         temp = temp->next;
     }
 }
+
 void insertfront(){
     newnode = (struct node *)malloc(sizeof(struct node));
     newnode->prev = NULL;
@@ -52,12 +53,14 @@ void insertfront(){
     head->prev = newnode;
     head = newnode;
 }
+
 void delfront(){
     temp = head;
     head = head->next;
     head->prev = NULL;
     free(temp);
 }
+
 void insertend(){
     newnode = (struct node *)malloc(sizeof(struct node));
     newnode->prev = NULL;
@@ -82,6 +85,7 @@ while(tail->next!=NULL){
     newnode->prev=tail;
     newnode->next=NULL;
 }
+
 void delend(){
     temp = head;
 while (temp->next != NULL){
@@ -91,6 +95,7 @@ while (temp->next != NULL){
    cur->next=NULL;
    free(temp);
 }
+
 void display(){
     temp = head;
     int count = 1;
@@ -100,6 +105,7 @@ void display(){
           temp = temp->next;
     }
 }
+
 void dequeue(){   
     int choice;
     while (1){
@@ -118,6 +124,7 @@ void dequeue(){
      }
   }
 }
+
 int main(){
     struct node n;
     int i, m, ch;
