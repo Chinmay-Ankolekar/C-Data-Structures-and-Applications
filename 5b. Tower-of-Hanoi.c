@@ -9,6 +9,7 @@ void toh(int n,char source,char destination,char auxillary){
     printf("\nMove disk %d from rod %c to rod %c\n ",n,source,destination);
     toh(n-1,auxillary,destination,source);
 }
+
 int main(){
     int n;
     printf("Enter No. of disk :");
