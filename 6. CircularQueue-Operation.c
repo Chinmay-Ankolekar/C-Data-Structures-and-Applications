@@ -21,6 +21,7 @@ void enqueue()
          scanf(" %c",&cq[rear]);
     }
 }
+
 void dequeue(){
     if(front==-1&&rear==-1){
         printf("Queue Underflow!");
@@ -34,6 +35,7 @@ void dequeue(){
          front=(front+1)%MAX;
     }
 }
+
 void display(){
     int i;
     if(front==-1&&rear==-1){
@@ -46,6 +48,7 @@ void display(){
         printf("%c\n",cq[rear]);
     }
 }
+
 void main()
 {
     int ch;
