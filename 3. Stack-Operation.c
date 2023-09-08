@@ -16,6 +16,7 @@ void push(){
    stack[top]=item;
   } 
 }
+
 void pop(){
     if(top==-1){
         printf("Stack Underflow!\n");
@@ -25,6 +26,7 @@ void pop(){
         top--;
     }
 }
+
 void isPallindrome(){
     int flag=1,i;
     printf("Stack Contents are :\n");
@@ -48,6 +50,7 @@ void isPallindrome(){
         printf("It is not Pallindrome\n");
     }
 }
+
 void display(){
     int i;
     if(top==-1){
