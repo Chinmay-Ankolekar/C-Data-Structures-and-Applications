@@ -10,16 +10,19 @@ int isEmpty(){
     else
       return 0;
 }
+
 void push(char symbol){
     ++top;
     stack[top]=symbol;
     return;
 }
+
 int pop(){
     int temp=stack[top];
     --top;
     return temp;
 }
+
 int precedence(char symbol)
 {
   switch(symbol)
@@ -37,6 +40,7 @@ int precedence(char symbol)
         break;
     }
 }
+
 void infix_postfix(char*infix,char*postfix){
     int i,j=0;
     char symbol,next;
@@ -69,6 +73,7 @@ while(!isEmpty()){
 }
 postfix[j]='\0';
 }
+
 int main(){
     printf("Enter a valid infix expression:");
     scanf("%s",infix);
