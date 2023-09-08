@@ -12,15 +12,18 @@ int isEmpty(){
     else
       return 0;
 }
+
 void push(char symbol){
     stack[++top]=symbol;
     return;
 }
+
 int pop(){
     int temp=stack[top];
     --top;
     return temp;
 }
+
 float compute(char symbol,int op1,int op2)
 {
     switch(symbol)
@@ -40,6 +43,7 @@ float compute(char symbol,int op1,int op2)
         default :return 0;
     }
 }
+
 int main(){
     float res,op1,op2;
     char postfix[20],symbol;
