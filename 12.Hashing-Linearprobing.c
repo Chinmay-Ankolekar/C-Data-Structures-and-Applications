@@ -40,6 +40,7 @@ void LinearProbing(int key) {
 		HT[i] = i;
 	}
 }
+
 void Display() {
 	int i;
 	int ch;
@@ -53,6 +54,7 @@ void Display() {
 		 printf("%d \t %d \t%s \n",i, emp[i].id, emp[i].name);
 	}
 }
+
 void main(){
 	int key,i;
 	int ch;
