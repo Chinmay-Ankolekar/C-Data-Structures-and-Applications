@@ -30,6 +30,7 @@ void create(){
       temp=temp->next;
     }
 }
+
 int insertfront(){
     newnode = (struct node *)malloc(sizeof(struct node));
     newnode->next = NULL;
@@ -46,11 +47,13 @@ int insertfront(){
       newnode->next = head;
       head = newnode;
 }
+
 int delfront(){
     temp = head;
     head = temp->next;
     free(temp);
 }
+
 int insertend(){
     newnode = (struct node *)malloc(sizeof(struct node));
     printf("\nEnter Name:");
@@ -70,6 +73,7 @@ int insertend(){
     temp->next=newnode;
     newnode->next=NULL;
 }
+
 int delend(){
     temp = head;
 while (temp->next != NULL){
@@ -80,6 +84,7 @@ while (temp->next != NULL){
         tail = prev;
         free(temp);
     }
+
 void display(){
         temp = head;
         int count = 1;
@@ -89,6 +94,7 @@ void display(){
         temp = temp->next;
         }
 }
+
 int main(){
    int i, m, ch;
     while (1){
