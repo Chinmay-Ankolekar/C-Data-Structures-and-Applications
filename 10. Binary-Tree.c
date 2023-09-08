@@ -6,6 +6,7 @@ typedef struct node{
 	struct node *left;
 	struct node *right;
 }Node;
+
 Node * create(Node *root,int x)
 {
 	if(x==-1)
@@ -26,6 +27,7 @@ Node * create(Node *root,int x)
 	root->right=create(root,c);
 	return root;
 }
+
 void preorder(Node *root)
 {
 	if(root!=NULL)
@@ -35,6 +37,7 @@ void preorder(Node *root)
 		preorder(root->right);
 	}
 }
+
 void inorder(Node *root)
 {
 	if(root!=NULL)
@@ -44,6 +47,7 @@ void inorder(Node *root)
 		inorder(root->right);
 	}
 }
+
 void postorder(Node *root)
 {
 	if(root!=NULL)
@@ -53,6 +57,7 @@ void postorder(Node *root)
 		printf("%d\t",root->data);
 	}
 }
+
 int flag=0;
 void search(struct node* root,int key){
     if(root->data==key){
@@ -69,6 +74,7 @@ void search(struct node* root,int key){
     return;
     }
 }
+
 int main()
 {
 	int ch,k,key;
