@@ -89,6 +89,7 @@ int main(){
                 break;
           case 3:printf("Enter the Element to search:");
                  scanf("%d",&m);
+                 flag = 0; // resetting flag bit before each search
                  search(root,m);
                  if(flag==0) printf("Element %d not found",m);
                  else printf("Element %d found",m);
