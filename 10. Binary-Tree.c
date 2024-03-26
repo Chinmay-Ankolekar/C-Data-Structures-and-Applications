@@ -103,6 +103,7 @@ int main()
 			case 5:
 			printf("Enter the number to be searched : ");
 			scanf("%d",&key);
+			flag = 0; // resetting flag bit before each search
 			search(root,key);
 			if(flag==1)
 			{
